@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Week 8 lab</title>
+	  <!-- add the link tag to the style.css which will be in a folder -->
+	  <link rel="stylesheet" href="style.css">
+
+	</head>
+	<body>
+		<h1>Graded lab exercise - week 8</h1>
+		<ol>
+			<li>Add 3 examples of JavaScript code</li>
+			<li>Create a repo in GitHub and add your project when finished</li>
+			<li>Save the link to the GitHub repo in a text document and upload it to Moodle</li>
+			<ul>
+				<li>Your link should look like this https://github/username/repoName.git</li>
+			</ul>
+		</ol>
+
+		<!--Example 3-->
+		<div id="myDiv">
+			<h2>What Can JavaScript Do?</h2>
+		</div>
+
+		<input type="button" value = "Changing the style" onclick="changeStyle();" />
+
+		<!--Example 1-->
+		<p id="myP"></p>
+
+		<!--Example 2-->
+		<p id="demo">Hello World!</p>
+        <button type="button" onclick="sayHello();" name="button">
+            Click me
+        </button>
+
+
+		<!-- add your JavaScript inside the section below -->
+	  <script type="text/javascript">
+			//This is example 1
+			// Change paragraph:
+			document.getElementById("myP").innerHTML = "This is JavaScript text";
+
+			//This is JS for example 2
+			//Change the replace what is in p tags with click of button.
+			function sayHello() {
+                document.getElementById('demo').innerHTML = "Hello There, Welcome to the website. ";
+            }
+
+            function usinginnerHTML() {
+                var txt = document.getElementById('demo2');
+                alert(txt.innerHTML);
+            }
+
+			//This is example 3
+			function changeStyle(){
+				var changeMe = document.getElementById("myDiv");
+				changeMe.style.border = "solid";
+				changeMe.style.borderColor = "red";
+			}
+
+
+	  </script>
+	</body>
+</html>
